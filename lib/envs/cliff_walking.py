@@ -68,7 +68,7 @@ class CliffWalkingEnv(discrete.DiscreteEnv):
         self.s = self.P[self.s][action][0][1]
         return (self._convert_state(self.s), reward, done, info)
     
-    def _render(self, mode='rgb_array', close=False):
+    def render(self, mode='rgb_array', close=False):
         if close:
             return
 

@@ -53,7 +53,7 @@ class WindyGridworldEnv(discrete.DiscreteEnv):
 
         super(WindyGridworldEnv, self).__init__(nS, nA, P, isd)
 
-    def _render(self, mode='rgb_array', close=False):
+    def render(self, mode='rgb_array', close=False):
         if close:
             return
 
